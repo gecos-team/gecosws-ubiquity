@@ -2,7 +2,7 @@
 # Fichero de configuración de paquetes de personalización de GECOS
 
 # Nombre del paquete (minúsculas-separado-con-guiones)
-name: gecos-system-conf
+name: gecosws-ubiquity
 
 # Autor 
 author: Roberto C. Morano <rcmorano@emergya.com>
@@ -14,7 +14,7 @@ priority: optional
 section: metapackages
 
 # Descripción corta
-shortdesc: "GECOS system configuration package."
+shortdesc: "GECOS ubiquity configuration package."
 
 # Descripción larga, las lineas han de estar separadas por "\n "
 longdesc: "This package contains every GECOS system configuration file."
