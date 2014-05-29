@@ -2,7 +2,7 @@
 # Fichero de configuración de paquetes de personalización de GECOS
 
 # Nombre del paquete (minúsculas-separado-con-guiones)
-name: gecos-system-conf
+name: gecosws-ubiquity
 
 # Autor 
 author: Roberto C. Morano <rcmorano@emergya.com>
