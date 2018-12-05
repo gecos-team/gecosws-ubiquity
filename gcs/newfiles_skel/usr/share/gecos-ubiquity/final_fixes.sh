@@ -12,3 +12,6 @@ echo "#Sources in sources.list.d" > /target/etc/apt/sources.list
 
 chmod 644 /target/etc/apt/sources.list
 
+# Uninstall this package
+chroot /target dpkg -r gecosws-ubiquity
+
