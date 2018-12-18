@@ -15,3 +15,8 @@ chmod 644 /target/etc/apt/sources.list
 # Uninstall this package
 chroot /target dpkg -r gecosws-ubiquity
 
+# Uninstall ubiquity
+chroot /target dpkg --purge ubiquity ubiquity-casper ubiquity-frontend-gtk ubiquity-ubuntu-artwork
+chroot /target apt -y autoremove
+
+
