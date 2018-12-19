@@ -17,6 +17,9 @@ chroot /target dpkg -r gecosws-ubiquity
 
 # Uninstall ubiquity
 chroot /target dpkg --purge ubiquity ubiquity-casper ubiquity-frontend-gtk ubiquity-ubuntu-artwork
+chroot /target dpkg --purge ubiquity
 chroot /target apt -y autoremove
 
+# Stop chef service
+chroot /target /bin/systemctl disable chef-client.service
 
