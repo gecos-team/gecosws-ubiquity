@@ -20,6 +20,10 @@ chroot /target dpkg --purge ubiquity ubiquity-casper ubiquity-frontend-gtk ubiqu
 chroot /target dpkg --purge ubiquity
 chroot /target apt -y autoremove
 
+# Uninstall firefox language packs (firefox-esr doesn't need them)
+chroot /target dpkg --purge firefox-locale-en firefox-locale-es
+chroot /target apt -y autoremove
+
 # Stop chef service
 chroot /target /bin/systemctl disable chef-client.service
 
